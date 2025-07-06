@@ -3,8 +3,8 @@ package Pokemon;
 import PokemonTypes.GrassType;
 
 public class Bulbasaur extends GrassType {
-    public Bulbasaur(int level) {
-        super("Bulbasaur", level);
+    public Bulbasaur (String name, int level){
+        super(name, level);
     }
 
     @Override

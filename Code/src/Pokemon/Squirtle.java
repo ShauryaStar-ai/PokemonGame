@@ -1,6 +1,7 @@
 package Pokemon;
 
 import PokemonTypes.WaterType;
+/*
 
 public class Squirtle extends WaterType {
     private int level;
@@ -26,3 +27,4 @@ public class Squirtle extends WaterType {
         return " Hydropump Attack is happeing";
     }
 }
+*/

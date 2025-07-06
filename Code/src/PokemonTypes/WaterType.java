@@ -1,15 +1,14 @@
 package PokemonTypes;
 
-import Abstraction.PokemonForPlayer;
+import Abstraction.PokemonBase;
 
-public class WaterType implements PokemonForPlayer {
-    private String type = "Water";
+public class WaterType extends PokemonBase {
+    public WaterType(String name, int level){
+        super(name,level,"Water");
+    }
     @Override
     public String attack() {
         String attack = "Hydro Pump attack !! is happeing ";
         return attack;
         }
-    public String getType() {
-        return type;
-    }
 }
