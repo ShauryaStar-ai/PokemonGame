@@ -1,30 +1,19 @@
 package Pokemon;
 
 import PokemonTypes.WaterType;
-/*
+
 
 public class Squirtle extends WaterType {
-    private int level;
-
-    public int getLevel() {
-        return level;
-    }
-
-    public int setLevel(int level) {
-        if (level < 0){
-            System.out.println( "Ivalid level");
-        }
-        else
-            this.level = level;
-        return level;
+    public Squirtle(String name, int level){
+        super( name, level);
     }
 
     @Override
-    public String attack() {
-        return "Squirle: "+ super.attack();
+    public String attack(){
+        return getName()+super.attack();
     }
-    public String hydropumpAttack(){
-        return " Hydropump Attack is happeing";
+    public String shell(){
+        return " shell Attack is happeing";
     }
 }
-*/
+

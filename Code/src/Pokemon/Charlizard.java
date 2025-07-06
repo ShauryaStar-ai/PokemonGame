@@ -9,7 +9,7 @@ public class Charlizard extends FireType {
 
     @Override
     public String attack() {
-        return "Charlizard: "+ super.attack();
+        return getName()+ super.attack();
     }
     public String tossAttack(){
         return "Iron toss Attack is happeing";
