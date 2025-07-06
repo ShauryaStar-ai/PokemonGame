@@ -1,6 +1,6 @@
 package PlayingGame;
 
-import Interfaces.PokemonForPlayer;
+import Abstraction.PokemonForPlayer;
 
 import java.util.ArrayList;
 

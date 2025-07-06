@@ -1,17 +1,14 @@
 package PokemonTypes;
 
-import Interfaces.PokemonForPlayer;
+import Abstraction.PokemonBase;
 
-public class GrassType implements PokemonForPlayer {
-    private String type = "Grass";
-    private int level;
-    private String name;
+public class GrassType extends PokemonBase {
+    public GrassType(String name, int level) {
+        super(name, level, "Grass");
+    }
+
     @Override
     public String attack() {
-        String attack = "Solar Beam !! is happeing";
-        return attack;
-    }
-    public String getType() {
-        return type;
+        return getName() + " uses Solar Beam!";
     }
 }

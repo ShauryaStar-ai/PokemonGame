@@ -1,7 +1,7 @@
 package PokemonTypes;
 
 
-import Interfaces.PokemonForPlayer;
+import Abstraction.PokemonForPlayer;
 
 public class FireType implements PokemonForPlayer {
     private String type = "Fire";

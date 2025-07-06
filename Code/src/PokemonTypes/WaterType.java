@@ -1,6 +1,6 @@
 package PokemonTypes;
 
-import Interfaces.PokemonForPlayer;
+import Abstraction.PokemonForPlayer;
 
 public class WaterType implements PokemonForPlayer {
     private String type = "Water";
