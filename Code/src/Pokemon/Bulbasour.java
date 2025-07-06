@@ -3,8 +3,9 @@ package Pokemon;
 import PokemonTypes.GrassType;
 
 public class Bulbasour extends GrassType {
-    private int level;
+    public Bulbasour(){
 
+    }
     public int getLevel() {
         return level;
     }
@@ -26,4 +27,8 @@ public class Bulbasour extends GrassType {
         return "Leaf Attack is happeing";
     }
 
+    @Override
+    public String toString() {
+        return "Bulbasour named "+this.name;
+    }
 }

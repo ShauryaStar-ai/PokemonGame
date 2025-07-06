@@ -14,5 +14,10 @@ public class Player {
         this.numPokemon = numPokemon;
         this.pokemonCollection =   new ArrayList<>();
     }
+    public String addPokemon(PokemonForPlayer p ){
+        pokemonCollection.add(p);
+        return "Pokemon "+p+" added";
+    }
+
     // write function to show and add pokemon
 }
