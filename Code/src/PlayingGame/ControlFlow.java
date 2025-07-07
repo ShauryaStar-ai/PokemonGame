@@ -7,10 +7,12 @@ public class ControlFlow {
         Bulbasaur bulb = new Bulbasaur("ashBulb",10);
         Squirtle squirtle = new Squirtle("ashSqurile",2);
         Charlizard charlizard = new Charlizard("ashChar",100);
-        Player player = new Player("Ash",10);
+        Player ash = new Player("Ash",10);
 
-        charlizard.tossAttack();
-
+        System.out.println(squirtle.shell());
+        ash.addPokemon(charlizard);
+        ash.addPokemon(squirtle);
+        ash.showPokemon();
 
     }
 }

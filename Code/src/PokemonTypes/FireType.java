@@ -10,5 +10,8 @@ public class FireType extends PokemonBase{
         super( name,level,"fire");
     }
     @Override
+    public String attack() {
+        return getName() + " uses Flamethrower !";
     }
 }
+

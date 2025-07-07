@@ -13,7 +13,7 @@ public class Squirtle extends WaterType {
         return getName()+super.attack();
     }
     public String shell(){
-        return " shell Attack is happeing";
+        return getName()+"did shell attack";
     }
     @Override
     public String toString() {

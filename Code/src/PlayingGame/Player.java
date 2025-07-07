@@ -20,7 +20,7 @@ public class Player {
     }
     public void showPokemon(){
         for (PokemonForPlayer p  :pokemonCollection){
-            System.out.println(this.name+"has pokeomn "+p);
+            System.out.println(this.name+" has pokeomn "+p);
         }
     }
 }
