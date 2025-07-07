@@ -15,5 +15,9 @@ public class Squirtle extends WaterType {
     public String shell(){
         return " shell Attack is happeing";
     }
+    @Override
+    public String toString() {
+        return "Squirtle Named " + getName();
+    }
 }
 
