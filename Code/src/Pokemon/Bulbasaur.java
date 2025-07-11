@@ -1,5 +1,6 @@
 package Pokemon;
 
+import Abstraction.PokemonBase;
 import PokemonTypes.GrassType;
 
 public class Bulbasaur extends GrassType {
@@ -8,7 +9,7 @@ public class Bulbasaur extends GrassType {
     }
 
     @Override
-    public String attack() {
+    public String Generalattack(PokemonBase pokemonAttacked) {
         return getName() + " uses Vine Whip!";
     }
 

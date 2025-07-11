@@ -1,17 +1,17 @@
-package PokemonTypes;
+    package PokemonTypes;
 
 
-import Abstraction.PokemonBase;
+    import Abstraction.PokemonBase;
 
 
-public class FireType extends PokemonBase{
+    public class FireType extends PokemonBase{
 
-    public FireType(String name, int level){
-        super( name,level,"fire");
+        public FireType(String name, int level){
+            super( name,level,"fire");
+        }
+        @Override
+        public String Generalattack(PokemonBase pokemonAttacked) {
+            return getName() + " uses Flamethrower !";
+        }
     }
-    @Override
-    public String attack() {
-        return getName() + " uses Flamethrower !";
-    }
-}
 

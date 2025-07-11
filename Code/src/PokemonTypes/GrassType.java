@@ -7,8 +7,9 @@ public class GrassType extends PokemonBase {
         super(name, level, "Grass");
     }
 
+
     @Override
-    public String attack() {
+    public  String Generalattack(PokemonBase pokemonAttacked) {
         return getName() + " uses Solar Beam!";
     }
 }

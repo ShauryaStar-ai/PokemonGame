@@ -1,18 +1,13 @@
 package PlayingGame;
 
 import Pokemon.*;
+import PokemonTypes.FireType;
 
 public class ControlFlow {
     public static void main(String[] args) {
-        Bulbasaur bulb = new Bulbasaur("ashBulb",10);
-        Squirtle squirtle = new Squirtle("ashSqurile",2);
-        Charlizard charlizard = new Charlizard("ashChar",100);
-        Player ash = new Player("Ash",10);
 
-        System.out.println(squirtle.shell());
-        ash.addPokemon(charlizard);
-        ash.addPokemon(squirtle);
-        ash.showPokemon();
+
+
 
     }
 }

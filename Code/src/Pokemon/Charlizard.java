@@ -1,5 +1,6 @@
 package Pokemon;
 
+import Abstraction.PokemonBase;
 import PokemonTypes.FireType;
 
 public class Charlizard extends FireType {
@@ -8,8 +9,8 @@ public class Charlizard extends FireType {
     }
 
     @Override
-    public String attack() {
-        return getName()+ super.attack();
+    public String Generalattack(PokemonBase pokemonAttacked) {
+        return getName()+ " amber attack ";
     }
     public String tossAttack(){
         return "Iron toss Attack is happeing";
