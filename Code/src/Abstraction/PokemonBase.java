@@ -26,7 +26,7 @@ public abstract class PokemonBase implements PokemonForPlayer {
         }
         this.level = level;
     }
-    public void setHealthAfterAttack(double damage){
+    public void updateHealthAfterAttack(double damage){
         health = health - damage;
     }
 

@@ -13,6 +13,7 @@ public class Bulbasaur extends GrassType {
         return getName() + " uses Vine Whip!";
     }
 
+
     public String leafAttack() {
         return getName() + " uses Leaf Attack!";
     }

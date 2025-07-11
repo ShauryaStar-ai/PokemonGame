@@ -16,7 +16,7 @@ public class Squirtle extends WaterType {
 
     public String shell(PokemonBase pokemonAttacked) {
         double damage = 20;
-        pokemonAttacked.setHealthAfterAttack(damage);
+        pokemonAttacked.updateHealthAfterAttack(damage);
         return getName() + "did shell attack" + damage;
     }
         @Override

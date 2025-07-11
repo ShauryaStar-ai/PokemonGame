@@ -11,7 +11,10 @@
         }
         @Override
         public String Generalattack(PokemonBase pokemonAttacked) {
-            return getName() + " uses Flamethrower !";
+            double damage = 30;
+            pokemonAttacked.updateHealthAfterAttack(damage);
+            return "Flamethrower attack !! CAUSED DAMAGE "+ damage;
         }
+
     }
 
