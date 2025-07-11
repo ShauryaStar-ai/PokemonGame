@@ -11,13 +11,13 @@ public class Squirtle extends WaterType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
-        return getName() + super.Generalattack(pokemonAttacked);
+        return getName()+" executed " + super.Generalattack(pokemonAttacked);
     }
 
     public String shell(PokemonBase pokemonAttacked) {
         double damage = 20;
         pokemonAttacked.updateHealthAfterAttack(damage);
-        return getName() + "did shell attack" + damage;
+        return getName() + "did shell attack and caused damage of " + damage+ " health";
     }
         @Override
         public String toString () {

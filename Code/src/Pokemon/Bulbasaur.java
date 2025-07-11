@@ -10,12 +10,14 @@ public class Bulbasaur extends GrassType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
-        return getName() + " uses Vine Whip!";
+        return getName()+" executed " + super.Generalattack(pokemonAttacked);
     }
 
 
-    public String leafAttack() {
-        return getName() + " uses Leaf Attack!";
+    public String leafAttack(PokemonBase pokemonAttacked) {
+        double damage = 15;
+        pokemonAttacked.updateHealthAfterAttack(damage);
+        return getName() + " uses Leaf Attack! and caused damage of " + damage+ " health";
     }
 
     @Override

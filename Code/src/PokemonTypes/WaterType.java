@@ -10,6 +10,6 @@ public class WaterType extends PokemonBase {
     public String Generalattack(PokemonBase pokemonAttacked) {
         double damage = 20;
         pokemonAttacked.updateHealthAfterAttack(damage);
-        return "Hydro Pump attack !! CAUSED DAMAGE "+ damage;
+        return "Hydro Pump attack !! CAUSED DAMAGE of "+ damage+ " health";
         }
 }

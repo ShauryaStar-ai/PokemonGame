@@ -10,10 +10,12 @@ public class Charlizard extends FireType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
-        return getName()+ " amber attack ";
+        return getName()+" exectued "+super.Generalattack(pokemonAttacked);
     }
-    public String tossAttack(){
-        return "Iron toss Attack is happeing";
+    public String tossAttack(PokemonBase pokemonAttacked){
+        double damage = 50;
+        pokemonAttacked.updateHealthAfterAttack(damage);
+        return getName() + "did iron toss attack and caused damage of " + damage+ " health";
     }
     @Override
     public String toString() {
