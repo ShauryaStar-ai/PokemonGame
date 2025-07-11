@@ -15,7 +15,7 @@ public class Charlizard extends FireType {
     public String tossAttack(PokemonBase pokemonAttacked){
         double damage = 50;
         pokemonAttacked.updateHealthAfterAttack(damage);
-        return getName() + "did iron toss attack and caused damage of " + damage+ " health";
+        return getName() + "did iron toss attack and caused damage of " + damage+ " health points on "+pokemonAttacked;
     }
     @Override
     public String toString() {

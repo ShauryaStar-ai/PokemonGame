@@ -17,7 +17,7 @@ public class Bulbasaur extends GrassType {
     public String leafAttack(PokemonBase pokemonAttacked) {
         double damage = 15;
         pokemonAttacked.updateHealthAfterAttack(damage);
-        return getName() + " uses Leaf Attack! and caused damage of " + damage+ " health";
+        return getName() + " uses Leaf Attack! and caused damage of " + damage+" health points on "+pokemonAttacked;
     }
 
     @Override

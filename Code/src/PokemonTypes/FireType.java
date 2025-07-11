@@ -13,7 +13,7 @@
         public String Generalattack(PokemonBase pokemonAttacked) {
             double damage = 30;
             pokemonAttacked.updateHealthAfterAttack(damage);
-            return "Flamethrower attack !! CAUSED DAMAGE "+ damage+ " health points";
+            return "Flamethrower attack !! CAUSED DAMAGE "+ damage+ " of health points on "+pokemonAttacked;
         }
 
     }
