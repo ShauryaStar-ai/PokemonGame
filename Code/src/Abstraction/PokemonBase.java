@@ -17,7 +17,11 @@ public abstract class PokemonBase implements PokemonForPlayer {
     public String getName() { return name; }
     public int getLevel() { return level; }
     public String getType() { return type; }
-    public double getHealth(){return health; }
+    public double getHealth(){
+        if (health > 0){
+            return health;
+        }
+        return 0.0; }
     // Setters
     public void setName(String name) { this.name = name; }
     public void setLevel(int level) {
@@ -26,10 +30,12 @@ public abstract class PokemonBase implements PokemonForPlayer {
         }
         this.level = level;
     }
-    public void updateHealthAfterAttack(double damage){
+    public void giveDamageAfterAttack(double damage){
         health = health - damage;
     }
-
+    public void rejuvinate(){
+        health = 100;
+    }
 
 
 }

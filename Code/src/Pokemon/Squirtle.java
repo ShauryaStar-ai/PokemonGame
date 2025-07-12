@@ -11,12 +11,18 @@ public class Squirtle extends WaterType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
+        if (pokemonAttacked.getHealth() <= 0){
+            return "The pokemon attacked: "+pokemonAttacked+" has no more health thus cannot be attacked";
+        }
         return getName()+" executed " + super.Generalattack(pokemonAttacked);
     }
 
     public String shell(PokemonBase pokemonAttacked) {
+        if (pokemonAttacked.getHealth() <= 0){
+            return "The pokemon attacked: "+pokemonAttacked+" has no more health thus cannot be attacked";
+        }
         double damage = 20;
-        pokemonAttacked.updateHealthAfterAttack(damage);
+        pokemonAttacked.giveDamageAfterAttack(damage);
         return getName() + "did shell attack and caused damage of " + damage+ " health points on "+pokemonAttacked;
     }
         @Override

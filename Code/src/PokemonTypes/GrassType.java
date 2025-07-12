@@ -11,7 +11,7 @@ public class GrassType extends PokemonBase {
     @Override
     public String Generalattack(PokemonBase pokemonAttacked){
         double damage = 30;
-        pokemonAttacked.updateHealthAfterAttack(damage);
+        pokemonAttacked.giveDamageAfterAttack(damage);
         return "Solar Beam attack !! CAUSED DAMAGE "+ damage+ " of health points on "+pokemonAttacked;
     }
 }

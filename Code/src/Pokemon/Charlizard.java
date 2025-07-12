@@ -10,11 +10,17 @@ public class Charlizard extends FireType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
+        if (pokemonAttacked.getHealth() <= 0){
+            return "The pokemon attacked: "+pokemonAttacked+" has no more health thus cannot be attacked";
+        }
         return getName()+" exectued "+super.Generalattack(pokemonAttacked);
     }
     public String tossAttack(PokemonBase pokemonAttacked){
+        if (pokemonAttacked.getHealth() <= 0){
+            return "The pokemon attacked: "+pokemonAttacked+" has no more health thus cannot be attacked";
+        }
         double damage = 50;
-        pokemonAttacked.updateHealthAfterAttack(damage);
+        pokemonAttacked.giveDamageAfterAttack(damage);
         return getName() + "did iron toss attack and caused damage of " + damage+ " health points on "+pokemonAttacked;
     }
     @Override

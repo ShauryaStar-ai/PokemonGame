@@ -9,7 +9,7 @@ public class WaterType extends PokemonBase {
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
         double damage = 20;
-        pokemonAttacked.updateHealthAfterAttack(damage);
+        pokemonAttacked.giveDamageAfterAttack(damage);
         return "Hydro Pump attack !! CAUSED DAMAGE of "+ damage+ " of health points on "+pokemonAttacked ;
         }
 }

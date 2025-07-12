@@ -10,8 +10,21 @@ public class ControlFlow {
         Bulbasaur bulbasaur = new Bulbasaur("roy",10);
         Squirtle squirtle = new Squirtle("Blake",100);
         System.out.println(squirtle.getHealth());
+
         System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+        System.out.println(bulbasaur.leafAttack(squirtle));
+
         System.out.println(squirtle.getHealth());
+        squirtle.rejuvinate();
+        System.out.print(squirtle.getHealth());
 
 
 

@@ -12,7 +12,7 @@
         @Override
         public String Generalattack(PokemonBase pokemonAttacked) {
             double damage = 30;
-            pokemonAttacked.updateHealthAfterAttack(damage);
+            pokemonAttacked.giveDamageAfterAttack(damage);
             return "Flamethrower attack !! CAUSED DAMAGE "+ damage+ " of health points on "+pokemonAttacked;
         }
 

@@ -10,13 +10,19 @@ public class Bulbasaur extends GrassType {
 
     @Override
     public String Generalattack(PokemonBase pokemonAttacked) {
-        return getName()+" executed " + super.Generalattack(pokemonAttacked);
+        if (pokemonAttacked.getHealth() <= 0){
+            return "The pokemon attacked: "+pokemonAttacked+" has no more health thus cannot be attacked";
+        }else{
+        return getName()+" executed " + super.Generalattack(pokemonAttacked);}
     }
 
 
     public String leafAttack(PokemonBase pokemonAttacked) {
+        if (pokemonAttacked.getHealth() <= 0) {
+            return "The pokemon attacked: " + pokemonAttacked + " has no more health thus cannot be attacked";
+        }
         double damage = 15;
-        pokemonAttacked.updateHealthAfterAttack(damage);
+        pokemonAttacked.giveDamageAfterAttack(damage);
         return getName() + " uses Leaf Attack! and caused damage of " + damage+" health points on "+pokemonAttacked;
     }
 
