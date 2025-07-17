@@ -1,30 +1,36 @@
 package PlayingGame;
+
 import Abstraction.PokemonBase;
 import Pokemon.*;
 import java.util.Random;
 
 public class RandomPokemonGenerator extends Thread {
     private boolean running = true;
+    private volatile PokemonBase currentWildPokemon;
     private Random random = new Random();
-    @Override
-    public void run() {
-        while (running) {
-            // Generate a random Pokémon
-            PokemonBase wildPokemon = getRandomPokemon();
-            System.out.println("🌟 A  " + wildPokemon.getName() + " (Level "
-                    + wildPokemon.getLevel() + ") appeared!");
 
-            // Sleep for a few seconds before spawning the next one
-            try {
-                Thread.sleep(10000); // 5 seconds
-            } catch (InterruptedException e) {
-                System.out.println("Spawning interrupted!");
-            }
-        }
+    public PokemonBase getCurrentWildPokemon() {
+        return currentWildPokemon;
     }
+
     public void stopSpawning() {
         running = false;
     }
+
+    @Override
+    public void run() {
+        while (running) {
+            currentWildPokemon = getRandomPokemon();
+            System.out.println("🌟 A wild " + currentWildPokemon + " appeared!");
+
+            try {
+                Thread.sleep(10000); // Spawn every 10 sec
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     private PokemonBase getRandomPokemon() {
         int level = random.nextInt(99) + 1;
         int choice = random.nextInt(3);
@@ -40,6 +46,4 @@ public class RandomPokemonGenerator extends Thread {
                 return new Bulbasaur("Wild Bulbasaur", level);
         }
     }
-
-
 }
